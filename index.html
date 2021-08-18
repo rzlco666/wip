@@ -1,97 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js" >
 <head>
-	<title>Timothee Creative.</title>
-	<link rel="icon" type="image/png" href="favicon.png">
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Syahrizal Hanif</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
 
-.bgimg {
-  background-image: url('forestbridge.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: 'Lato', sans-serif;
-  font-size: 25px;
-}
+<body id="top" class="theme-particles">
 
-.topleft {
-  position: absolute;
-  top: 10px;
-  left: 16px;
-}
 
-.bottomleft {
-  position: absolute;
-  bottom: 10px;
-  left: 16px;
-}
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
-<body>
+    <!-- page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
 
-<div class="bgimg">
-  <div class="topleft">
-    <img src="logo.png" height="25%" width="25%">
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="demo" style="font-size:30px"></p>
-  </div>
-  <div class="bottomleft">
-    <p>Project by Timothee Creative.</p>
-  </div>
-</div>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 19, 2021 15:37:25").getTime();
+        <!-- # header
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__content">
 
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
+                <div class="s-header__logo">
+                    <a class="logo" href="">
+                        <img src="images/logo.png" alt="Homepage">
+                    </a>
+                </div>
+    
+                <ul class="s-header__social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/rzlco/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                            </svg>
+                            <span class="screen-reader-text">Linkedin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/rzlco666?tab=repositories" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            <span class="screen-reader-text">Github</span>
+                        </a>
+                    </li>
+                </ul>
 
-  // Get todays date and time
-  var now = new Date().getTime();
-  
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-  
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+            </div> <!-- end s-header__content -->
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro 
+        ================================================== -->
+        <section id="intro" class="s-intro">
+
+            <div id="particles-js" class="s-intro__particles"></div>
+
+            <div class="row s-intro__content">
+                <div class="column lg-12">
+                    
+                    <div class="counter">
+                        <div class="counter__time">
+                            <span class="ss-days">3</span>
+                            <span>days</span>
+                        </div>
+                        <div class="counter__time">
+                            <span class="ss-hours">01</span>
+                            <span>hours</span>
+                        </div>
+                        <div class="counter__time minutes">
+                            <span class="ss-minutes">01</span>
+                            <span>mins</span>
+                        </div>
+                        <div class="counter__time">
+                            <span class="ss-seconds">55</span>
+                            <span>secs</span>
+                        </div>
+                    </div>  <!-- end counter -->
+
+                    <div class="s-intro__content-bottom">
+                        <h1 class="s-intro__content-title">Our site is launching soon.</h1>
+                        <p>
+                        Syahrizal Hanif Web. 
+                        </p>
+                    </div>
+
+                </div>
+
+            </div> <!-- intro__content -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # info
+        ================================================== -->
+        <input type="hidden" class="s-info">
+        <!-- end s-info -->
+
+    </div> <!-- end pagewrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/particle-settings.js"></script>
 
 </body>
 </html>
